@@ -16,12 +16,21 @@ resource "aws_launch_template" "web_template" {
   )
 
   network_interfaces {
-    associate_public_ip_address = true
-    subnet_id                   = var.webtier_subnetid
-    security_groups             = var.webtier_sg_id
+    associate_public_ip_address = false
+    #subnet_id                   = var.webtier_subnetid
+    security_groups = [var.webtier_sg_id]
   }
 
   monitoring {
     enabled = true
   }
+
+  tag_specifications {
+    resource_type = "instance"
+
+    tags = {
+      Name = "web_instance"
+    }
+  }
+
 }

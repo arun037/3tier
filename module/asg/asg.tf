@@ -14,7 +14,7 @@ resource "aws_autoscaling_group" "webasg" {
   health_check_type         = "EC2"
   health_check_grace_period = 30
 
-  target_group_arns = var.web_target_group_arns
+  target_group_arns = [var.web_target_group_arns]
 
 
 }
@@ -35,7 +35,7 @@ resource "aws_autoscaling_group" "appasg" {
   health_check_type         = "EC2"
   health_check_grace_period = 30
 
-  target_group_arns = var.app_target_group_arns
+  target_group_arns = [var.app_target_group_arns]
 
 
 }
