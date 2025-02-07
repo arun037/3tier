@@ -1,0 +1,9 @@
+variable "webtier_lauch_template_name" {}
+variable "webtier_image_id" {}
+variable "webtier_instance_type" {}
+variable "key_name" {}
+variable "webtier_subnetid" {}
+variable "webtier_sg_id" {}
+variable "apptier_lauch_template_name" {}
+variable "apptier_subnetid" {}
+variable "apptier_sg_id" {}

@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"launchtemplate","Source":"./module/launchtemplate","Dir":"module/launchtemplate"},{"Key":"loadbalance","Source":"./module/lb","Dir":"module/lb"},{"Key":"security_group","Source":"./module/sg","Dir":"module/sg"},{"Key":"vpc","Source":"./module/vpc","Dir":"module/vpc"}]}
